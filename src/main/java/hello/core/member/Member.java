@@ -4,12 +4,12 @@ public class Member {
 
     private Long id;
     private String name;
-    private Grade gradle;
+    private Grade grade;
 
-    public Member(Long id, String name, Grade gradle) {
+    public Member(Long id, String name, Grade grade) {
         this.id = id;
         this.name = name;
-        this.gradle = gradle;
+        this.grade = grade;
     }
 
     public Long getId() {
@@ -28,11 +28,11 @@ public class Member {
         this.name = name;
     }
 
-    public Grade getGradle() {
-        return gradle;
+    public Grade getGrade() {
+        return grade;
     }
 
-    public void setGradle(Grade gradle) {
-        this.gradle = gradle;
+    public void setGrade(Grade grade) {
+        this.grade = grade;
     }
 }
