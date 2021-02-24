@@ -1,6 +1,6 @@
 package hello.core;
 
-import hello.core.member.Gradle;
+import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
@@ -15,7 +15,7 @@ public class OrderApp {
         OrderService orderService = new OrderServiceImpl();
 
         Long memberId = 1L;
-        Member member = new Member(memberId, "memberA", Gradle.VIP);
+        Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
 
         Order order = orderService.createOrder(memberId, "itemA", 10000);
