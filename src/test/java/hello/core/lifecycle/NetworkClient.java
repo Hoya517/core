@@ -38,7 +38,7 @@ public class NetworkClient implements InitializingBean, DisposableBean {
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("Closing NetworkClient.destroy");
+        System.out.println("NetworkClient.destroy");
         disconnect();
     }
 }
